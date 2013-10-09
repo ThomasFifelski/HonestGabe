@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/flag2"
+    android:clickable="false">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/payPal"
+        android:background="@drawable/donate"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/www"
+        android:background="@drawable/www"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Honest Gabe Advisor "
+        android:id="@+id/textView"
+        android:textColor="#faf9ff"
+        android:textSize="25dp"
+        android:textColorLink="#ffffff"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tom"
+        android:textColor="#fbfbff"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speical Thanks"
+        android:id="@+id/textView3"
+
+        android:textColor="#fffbfd"
+        android:textSize="25dp"
+        android:layout_below="@+id/tom"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:textColor="#f7fdff"
+        android:gravity="center"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/tom"
+        android:layout_toLeftOf="@+id/www" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="by"
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="New Text"
+        android:id="@+id/textView2"
+        android:phoneNumber="true"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView7"
+        android:layout_toLeftOf="@+id/www"
+        android:layout_toRightOf="@+id/payPal"
+        android:layout_above="@+id/email"
+        android:textSize="15dp" />
+
+</RelativeLayout>

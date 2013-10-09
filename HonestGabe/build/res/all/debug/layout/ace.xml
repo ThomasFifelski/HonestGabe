@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/advice"
+    android:background="#000000">
+
+
+
+
+        <com.google.ads.doubleclick.DfpAdView android:id="@+id/adView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            ads:adUnitId="ca-app-pub-5357322922990776/3957375649"
+            ads:adSize="BANNER"
+            android:layout_alignParentBottom="true"
+            ads:loadAdOnCreate="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top"
+        android:gravity="center"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="oiutoutyouti"
+        android:textColor="#040404" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text=""
+        android:id="@+id/to_ask"
+
+        android:layout_gravity="center"
+        android:background="#030303"
+        android:layout_above="@+id/adView"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quote"
+        android:id="@+id/answer"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/imageView" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-Honest Gabe"
+        android:layout_gravity="center"
+        android:id="@+id/textView2"
+        android:textSize="17dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/answer"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/honestgabe"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Brought to you by HonestIndustries.co"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imageView"
+        android:layout_alignRight="@+id/answer" />
+
+
+</RelativeLayout ><!-- From: file:/Users/tom/Desktop/HonestGabeProject/HonestGabe/src/main/res/layout/ace.xml -->
